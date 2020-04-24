@@ -1,0 +1,45 @@
+\documentclass[a4paper,twocolumn, twoside]{bxjsarticle}  
+\usepackage{zxjatype} %日本語環境にするためのもの
+\usepackage[ipa]{zxjafont} %日本語環境にするためのもの
+\usepackage[dvipdfmx]{graphicx} %図を入れるためのパッケージ
+%\usepackage{here} %図を指定した場所に入れることのできるパッケージ
+\usepackage{amsmath} %数式環境用パッケージ
+\usepackage{bm}%ベクトルを太字として表示するためのパッケージ
+\usepackage{comment}%まとめてコメントアウトするためのパッケージ
+\usepackage{braket}%ブラケットを使うためのパッケージ
+
+\makeatletter %以下はsectionごとに式番号を振るためのやつ
+\@addtoreset{equation}{section}
+\def\theequation{\thesection.\arabic{equation}}
+\makeatother %ここまで
+
+\newcommand{\Slash}[1]{{\ooalign{\hfil/\hfil\crcr$#1$}}} %Feynmanのスラッシュ用
+
+\title{\vspace{-4cm}rheaでのKID測定(仮)}
+\author{辻　悠汰}
+\date{first draft:2020/04/24 \\
+      this version:2020/04/24}
+
+\begin{document}
+
+\begin{abstract}
+rheaを使ったKIDの測定を行ったので、そのレポートの概要がここに来る。
+\end{abstract}
+
+\maketitle
+
+
+%\twocolumn[
+%\maketitle
+%\begin{abstract}
+%ここが概要
+%\end{abstract}
+%]
+
+%\tableofcontents
+%\clearpage
+
+\input{section1}
+\input{section2}
+
+\end{document}
